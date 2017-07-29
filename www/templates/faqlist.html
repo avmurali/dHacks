@@ -1,0 +1,9 @@
+<ion-view view-title="FAQs">
+  <ion-content>
+    <ion-list>
+      <ion-item class="faqlist" ng-repeat="faq in faqs" href="#/app/faqdetails/{{faq.id}}" >
+        {{faq.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,9 @@
+<ion-view view-title="{{predictionsDetail.title}}">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in predictionsDetail.players" href="#/app/playlists/{{playlist.id}}"  ng-class="playlist.player_type">
+        {{playlist.name}} <img src=""/>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

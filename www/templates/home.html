@@ -1,0 +1,47 @@
+<ion-view view-title="Current Matches">
+<div class="bar bar-subheader">
+	<div class="tabs tabs-icon-left">
+	  <a id="current-match-btn" ng-class="tabitem" ng-click="tabitem='tab-item active';tabitem1='tab-item';slider.slideTo(0)">
+	    <i class="icon ion-ios-tennisball"></i>
+	    Current Match
+	  </a>
+	  <a id="predictions-match-btn" ng-class="tabitem1" ng-click="tabitem1='tab-item active';tabitem='tab-item';slider.slideTo(1)">
+	    <i class="icon ion-star"></i>
+	    Perdictions
+	  </a>
+	</div>    
+</div>
+
+  <ion-slides show-pager="">
+    <ion-slide-page>
+    <ion-content>
+  	<ion-refresher pulling-text="Pull to refresh..." on-refresh="doCommonRefresh()">
+	</ion-refresher> 
+		<div>
+		<ion-list class="current-match">
+		<ion-item ng-repeat="item in items">
+		<h2>{{item.series_name}}</h2>
+		<p>{{item.MatchNo}} - {{item.Team[0].Team}} vs {{item.Team[0].Team}}</p>
+		<p class="start-date">{{item.StartDate}}</p>
+		</ion-item>
+		</ion-list>
+		</div>    
+	</ion-content>	  
+    </ion-slide-page>
+    <ion-slide-page>
+    <ion-content>
+  	<ion-refresher pulling-text="Pull to refresh..." on-refresh="doCommonRefresh()">
+	</ion-refresher> 
+    <div>
+    <ion-list class="current-match">
+      <ion-item ng-repeat="prediction in predictions" href="#/app/predictions/{{prediction.id}}">
+        <h2>{{prediction.title}}</h2>
+      	<p>Starts At {{prediction.starts_at}}</p>
+      </ion-item>
+    </ion-list>
+    </div>      
+    </ion-content>
+    </ion-slide-page>
+  </ion-slides>
+  
+</ion-view>

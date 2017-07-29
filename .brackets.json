@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/jayakumar/projects/ionic/dHacks/platforms/android/cordova/lib/builders/AntBuilder.js",
+        "/Users/jayakumar/projects/ionic/dHacks/platforms/ios/cordova/lib/run.js",
+        "/Users/jayakumar/projects/ionic/dHacks/platforms/ios/cordova/lib/spawn.js",
+        "/Users/jayakumar/projects/ionic/dHacks/platforms/ios/cordova/lib/versions.js",
+        "/Users/jayakumar/projects/ionic/dHacks/platforms/ios/CordovaLib/cordova.js"
+    ]
+}

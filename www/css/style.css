@@ -1,0 +1,128 @@
+/* Empty. Add your own CSS if you like */
+.menu-icons{
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+    padding-right: 10px;
+    color: #fff;    
+}
+[nav-bar-transition="ios"] .bar, [nav-bar-transition="android"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+    background: #c61d23;
+}
+.bar.bar-stable .title, .bar.bar-stable button{
+    color: #fff !important;
+}
+.menu .scroll-content ,.menu  .item-content{
+    background: #b91818 !important;
+    color: #fff !important;
+}
+.menu .item{
+    color: #fff;
+    border-color: #fff;
+}
+.tabs.tabs-icon-left{
+    position: fixed;
+    top: 0px;    
+}
+.home-tab-btn {
+    width: calc((100% / 2) - 20px);
+}
+.home-tab-btn.ion-ios-tennisball:before, .home-tab-btn.ion-ios-list:before {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    padding-right: 5px;
+}
+.faqlist a{
+    white-space: normal !important;
+}
+.faqheading{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+.faqdetailsdiv{
+    padding: 10px;
+}
+.bar-subheader{
+    padding: 0;
+    height: 55px;
+}
+.bar-subheader .tab-item{
+    max-width: 50%;
+    font-size: 14px !important;
+    color: #fff;
+    opacity: 1;    
+}
+.bar-subheader .tab-item.active{
+    border-bottom: 3px solid #fff; 
+}
+.tabs.tabs-icon-left {
+    background: #dc242a;
+    -webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.68);
+    box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.4);
+}
+.scroll-refresher{
+    top: 0px;
+}
+.current-match .item h2{
+    white-space: normal;
+    font-size: 14px;
+}
+.start-date{
+    font-size: 12px;
+}
+.current-match .item p{
+    white-space: normal;
+}
+.current-match .list{
+    top: 54px;
+}
+.swiper-pagination.swiper-pagination-clickable{
+    display: none;
+}
+.Batsman a{
+    background-image: url(/img/batsman.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;    
+}
+
+.Bowler a{
+    background-image: url(/img/bowler.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;    
+}
+/*
+[nav-view-transition="ios"] [nav-view="entering"],
+[nav-view-transition="ios"] [nav-view="leaving"] {
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+} 
+
+
+[nav-bar="entering"],
+[nav-bar="leaving"] {
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+} 
+[nav-bar-transition="ios"] .title, [nav-bar-transition="ios"] .buttons, [nav-bar-transition="ios"] .back-text{
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+  -webkit-transform: none;
+  transform: none;
+  transition-property: none;  
+  -webkit-transition-property: none;  
+}
+.item .item-content.activated {
+    border-color: #ccc;
+    background-color: #fff;
+}
+.click-block{
+    display: none;
+}
+.pane{
+    maring-top: -20px;
+}*/
